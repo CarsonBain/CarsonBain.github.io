@@ -1,2 +1,6 @@
 # CarsonBain.github.io
-Portfolio Site
+
+
+### About
+
+Carson Bain's main portfolio site for front end development
