@@ -269,22 +269,20 @@ nav li {
   border-top: 1px solid $color-base;
 }
 /*--HERO--*/
-body:after{
-      content:"";
-      position:fixed;
-      top:0;
-      height:100vh;
-      left:0;
-      right:0;
-      z-index:-1; /* needed to keep in the background */
-      background: url('../images/bg1.jpg') center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-}
 .hero__wrap {
+  background: url("../images/bg1.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
   color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .hero__wrap {
+    background-attachment: scroll;
+  }
 }
 .hero {
   position: absolute;
@@ -292,6 +290,11 @@ body:after{
   left: 4%;
   max-width: 700px;
   width: 92%;
+}
+@media screen and (max-width: 400px) {
+  .hero {
+    top: 15%;
+  }
 }
 .hero h1 {
   margin-bottom: 0;
