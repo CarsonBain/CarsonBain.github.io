@@ -1,6 +1,5 @@
 $(function(){
   //mobile menu functionality
-$('.mobile-menu ul').css('display', 'none');
 $('.hamburger__wrap').click(function(){
   $('.mobile-menu ul').slideToggle();
   $('.hamburger-menu').toggleClass('open');
