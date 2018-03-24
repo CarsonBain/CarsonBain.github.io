@@ -268,12 +268,22 @@ nav li {
   border-top: 1px solid $color-base;
 }
 /*--HERO--*/
+body:after{
+      content:"";
+      position:fixed;
+      top:0;
+      height:100vh;
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
+      background: url('../images/bg1.jpg') center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
 .hero__wrap {
-  background-image: url('../images/bg1.jpg');
-  background-size: cover;
   color: #fff;
-  height: 100vh;
-  background-attachment: fixed;
 }
 .hero {
   position: absolute;
