@@ -52,6 +52,9 @@
   .column.half, .column.third {
     width: 100%;
   }
+  .column.half .description__text, .column.third .description__text {
+    padding: 4% 0;
+  }
   .half-margin--left {
     margin-left: 2%;
   }
