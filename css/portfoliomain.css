@@ -27,9 +27,12 @@
 .push-left {
   margin-right: auto;
 }
+.row {
+  margin: 2% 0;
+}
 
 .column {
-  margin: 2%;
+  margin: 0 2%;
 }
 
 .half-margin--left {
