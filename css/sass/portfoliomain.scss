@@ -4,7 +4,7 @@ $main-font: 'Lato', sans-serif;
 /*--main colors --*/
 $color-base: #333;
 $accent-color: #0e1f24;
-$alt-background-color: #fff5d5;
+$alt-background-color: #c7eeff;
 /*--font sizes--*/
 $h1-size: 3em;
 $h2-size: 2.5em;
@@ -38,8 +38,12 @@ $box-shadow: 1px 1px 6px rgba(51, 51, 51, 0.15);
 .push-left {
   margin-right: auto;
 }
+.row {
+  padding: 48px 0;
+}
 .column {
   margin: 2%;
+  padding: 24px;
 }
 .half-margin--left {
   margin-left: 1%
@@ -48,18 +52,27 @@ $box-shadow: 1px 1px 6px rgba(51, 51, 51, 0.15);
   margin-right: 1%
 }
 .column.half {
-  width: 47%;
+  width: calc(47% - 48px);
 }
 .column.third {
   width: 29.33%;
 }
+.mt-0 {
+  margin-top: 0;
+}
 @media screen and (max-width: 767px) {
+  .column {
+    padding: 12px 24px;
+  }
   .column.half, .column.third {
     width: 100%;
 
     .description__text {
       padding: 4% 0;
     }
+  }
+  .column.half:nth-of-type(2) {
+    margin-top: 0;
   }
   .half-margin--left {
     margin-left: 2%
@@ -220,9 +233,10 @@ color: $accent-color;
   cursor: pointer;
 }
 nav {
-  width: 96%;
+  width: 90%;
+  max-width: 1600px;
   margin: 0 auto;
-  padding-top: 16px;
+  padding-top: 32px;
 }
 nav ul {
   list-style: none;
@@ -292,8 +306,8 @@ nav li {
 }
 .hero {
   position: absolute;
-  top: 25%;
-  left: 4%;
+  top: 15%;
+  left: 7%;
   max-width: 700px;
   width: 92%;
 }
