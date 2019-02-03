@@ -195,20 +195,16 @@ img {
     background-attachment: scroll; } }
 .hero {
   position: absolute;
-  top: 15%;
+  top: 45%;
+  transform: translateY(-45%);
   left: 7%;
   max-width: 700px;
   width: 92%; }
-
-@media screen and (max-width: 400px) {
-  .hero {
-    top: 15%; } }
-.hero h1 {
-  margin-bottom: 0; }
-
-.hero p {
-  font-size: 1.15em;
-  opacity: 0.9; }
+  .hero h1 {
+    margin-bottom: 0; }
+  .hero p {
+    font-size: 1.15em;
+    opacity: 0.9; }
 
 .welcome .button {
   margin-top: 24px; }

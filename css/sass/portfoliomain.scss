@@ -199,6 +199,7 @@ img {
 .button svg.space-right {
   margin-right: 4px;
 }
+/*--Hero--*/
 .hero__wrap {
   background: url("../images/bg1.jpg");
   -webkit-background-size: cover;
@@ -208,38 +209,38 @@ img {
   height: 100vh;
   background-attachment: fixed;
   color: #fff;
-  @media screen and (max-width: 1024px) {
-    .hero__wrap {
-      background-attachment: scroll;
-    }
+}
+@media screen and (max-width: 1024px) {
+  .hero__wrap {
+    background-attachment: scroll;
   }
-  .hero {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-45%);
-    left: 7%;
-    max-width: 700px;
-    width: 92%;
-    h1 {
-      margin-bottom: 0;
-    }
-    p {
-      font-size: 1.15em;
-      opacity: 0.9;
-    }
-    .welcome .button {
-      margin-top: 24px;
-    }
-    .scroll__wrap {
-      position: absolute;
-      bottom: 24px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.9);
-      text-align: center;
-    }
+}
+.hero {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-45%);
+  left: 7%;
+  max-width: 700px;
+  width: 92%;
+  h1 {
+    margin-bottom: 0;
   }
+  p {
+    font-size: 1.15em;
+    opacity: 0.9;
+  }
+}
+.welcome .button {
+  margin-top: 24px;
+}
+.scroll__wrap {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
 }
 /*--About Section --*/
 .section--alt {
