@@ -19,17 +19,28 @@ $box-shadow: 1px 1px 6px rgba(51, 51, 51, 0.15);
 
 /*--Flex classes--*/
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 .flex--v-center {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .flex--h-center {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .flex-v--top {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .push-right {
   margin-left: auto;
@@ -135,9 +146,6 @@ a {
   color: inherit;
   opacity: 0.9;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
   .svg-inline--fa {
     font-size: $h6-size;
@@ -160,9 +168,6 @@ img {
   border-radius: 4px;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
   letter-spacing: 0.02em;
   display: inline-block;
@@ -202,9 +207,6 @@ img {
 /*--Hero--*/
 .hero__wrap {
   background: url("../images/bg1.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
@@ -218,7 +220,8 @@ img {
 .hero {
   position: absolute;
   top: 45%;
-  transform: translateY(-45%);
+  -webkit-transform: translateY(-45%);
+          transform: translateY(-45%);
   left: 7%;
   max-width: 700px;
   width: 92%;
@@ -235,12 +238,16 @@ img {
 }
 .scroll__wrap {
   position: absolute;
-  bottom: 24px;
+  bottom: 48px;
   left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
+  a {
+    opacity: 1;
+  }
 }
 /*--About Section --*/
 .section--alt {
@@ -259,7 +266,8 @@ img {
 @media screen and (min-width: 960px) {
   .overlay__block {
     position: relative;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .overlay__block--right {
     right: 10%;
